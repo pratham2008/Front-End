@@ -1,0 +1,1 @@
+alert("can't believe this\njust press ok button")
