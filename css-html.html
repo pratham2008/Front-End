@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* Class Selector  */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        #red{
+            background-color: red;
+        }
+
+        /* Child Selectors  */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector  */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            margin:0;
+            padding: 0;
+            /* background-color: blanchedalmond; */
+        }
+
+        /* Pseudo Selector  */
+        a:visited{  /* to set color of visited link */
+            color: yellow
+        } 
+
+        a:link {    /* to set color of unvisited link */
+            color: green;
+        }
+
+        a:active{   /* to set color of link while clicking on it */
+            background-color: red;
+        }
+
+        a:hover{    /* to set color of link whenever curser goes on it */
+            background-color: yellow;
+        }
+
+
+        p:first-child{  /* to set color of first class above there...*/
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">  <!-- ...here first-child*/ -->        
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+    <!-- we can aasign multiple class , ex., class="classname1 classname2" -->
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green"> 
+    <!-- can't assign multiple id(s) -->
+        I am another div
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.facebook2.com">Go to Facebook</a><br>
+
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    <a target="_blank" href="https://www.youtube.com/watch?v=1cEG1T8beO4">Harry Video related to the above content</a>
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    
+    <!-- SECOND & NEXT PART : -->
+    <br><br><h3><i>Set pedding, margin, border</i>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+    
+    <div class="box box1"><h1>I am a box </h1></div>
+    <div class="box box2">I am another box</div>
+
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    <a target="_blank" href="https://www.youtube.com/watch?v=Xrxd6cEajhM">video 18 and video 2 for CSS</a>
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    <!-- comment -->
+    
+    <!-- THIRD & NEXT PART : -->
+
+    <br><br><h3><b> > Fonts, Text & Color Properties </b><br>
+    important for text desging<br>
+    <a target="_blank" href="https://www.youtube.com/watch?v=aFicd4-YTfo">video 19 and video 3 for CSS</a><br>
+    repo link <a target="_blank" href="https://github.com/pratham2008/Sigma-Web-Dev-Course/tree/main/Video%2019">Repo Link of Video 19 for font...</a><br>
+    try Task-2 from video #20<br>
+    watch Video #21 for CSS Specificity & Cascade mean which color will execute in STYLE tag. <a href="https://www.youtube.com/watch?v=uTcpbPMZlFE">video 21</a><br>
+    <br>
+    watch Video #22 for CSS Sizing units like where to use px, em, rem and how they helpful in different SIZE of device. <a target="_blank" href="https://www.youtube.com/watch?v=nkaAJYfRDVk">video 22</a><br>
+
+    
+</body>
+</html>
